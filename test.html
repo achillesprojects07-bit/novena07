@@ -200,5 +200,16 @@ document.getElementById('navHome').onclick=()=>{showHome();setActiveNav('navHome
 document.getElementById('navPray').onclick=()=>{startPrayer();setActiveNav('navPray')};
 document.getElementById('navDays').onclick=()=>{showCalendar();setActiveNav('navDays')};
 document.getElementById('navSettings').onclick=()=>{showSettings();setActiveNav('navSettings')};
-renderHome();if(navigator.serviceWorker)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+renderHome();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js');
+</script><script>
+window.addEventListener('load',()=>{let out=[];try{
+localStorage.clear();renderHome();
+document.getElementById('navSettings').click();out.push('settings-visible:'+!document.querySelector('.settingsCard').classList.contains('hidden'));
+document.getElementById('changeStart').click();out.push('date-visible:'+!document.getElementById('setupCard').classList.contains('hidden'));
+document.getElementById('startDate').value='2026-09-29';document.getElementById('saveStart').click();out.push('date-saved:'+localStorage.getItem('rosaryStartDate'));
+document.getElementById('navPray').click();out.push('prayer:'+document.getElementById('cardTitle').textContent);
+prayerLang='la';let steps=buildSteps();out.push('latin:'+steps.some(s=>s.x&&s.x.startsWith('Ave Maria, gratia plena')));
+prayerLang='es';steps=buildSteps();out.push('spanish:'+steps.some(s=>s.x&&s.x.startsWith('Dios te salve, María')));
+document.getElementById('navHome').click();document.getElementById('newNovena').click();out.push('confirm-visible:'+!document.getElementById('restartModal').classList.contains('hidden'));document.getElementById('confirmRestart').click();out.push('reset:'+!localStorage.getItem('rosaryStartDate'));
+}catch(e){out.push('ERROR:'+e.message)}document.body.setAttribute('data-tests',out.join('|'))})
 </script></body></html>
