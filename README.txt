@@ -6,7 +6,7 @@ FILES
 - sw.js — allows the app to work after it has been cached
 
 HOW TO USE ON IPHONE
-1. Put these three files on any HTTPS static web host (for example GitHub Pages).
+1. Put these three files on any HTTPS static web host (for example GitH ub Pages).
 2. Open the resulting website in Safari on your iPhone.
 3. Tap Share.
 4. Tap Add to Home Screen.
