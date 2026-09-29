@@ -1,1 +1,21 @@
-{"name":"My 54-Day Rosary Novena","short_name":"54 Day Rosary","start_url":"./index.html","display":"standalone","background_color":"#fffdf7","theme_color":"#315d8b","description":"A private 54-Day Rosary Novena prayer companion with personalized petitions and progress tracking.","icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]}
+{
+  "name": "My 54-Day Rosary Novena",
+  "short_name": "54 Day Rosary",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fffdf7",
+  "theme_color": "#315d8b",
+  "description": "A private 54-Day Rosary Novena prayer companion with personalized petitions and progress tracking.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
