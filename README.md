@@ -1,1 +1,1 @@
-Version 5.5: persistent bottom navigation, functional date editor and restart, fixed guided mystery rendering, preserved English personal intentions. Upload all files in this ZIP to your existing site.
+Version 5.5: fixed start-date and restart controls; persistent bottom navigation on all screens; corrected mystery screen crash; versioned offline cache. Keep six intentions in English.

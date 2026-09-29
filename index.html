@@ -200,5 +200,5 @@ document.getElementById('navHome').onclick=()=>{showHome();setActiveNav('navHome
 document.getElementById('navPray').onclick=()=>{startPrayer();setActiveNav('navPray')};
 document.getElementById('navDays').onclick=()=>{showCalendar();setActiveNav('navDays')};
 document.getElementById('navSettings').onclick=()=>{showSettings();setActiveNav('navSettings')};
-renderHome();if(navigator.serviceWorker)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+renderHome();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js');
 </script></body></html>
