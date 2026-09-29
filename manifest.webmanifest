@@ -1,10 +1,10 @@
 {
   "name": "My 54-Day Rosary Novena",
   "short_name": "54 Day Rosary",
-  "start_url": "./?v=6.1",
+  "start_url": "./?v=7.0",
   "display": "standalone",
-  "background_color": "#fffdf7",
-  "theme_color": "#315d8b",
+  "background_color": "#fffaf0",
+  "theme_color": "#032f5b",
   "description": "A private 54-Day Rosary Novena prayer companion with personalized petitions and progress tracking.",
   "icons": [
     {
