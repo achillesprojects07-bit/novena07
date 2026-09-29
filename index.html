@@ -28,7 +28,7 @@
 .bottomNav button{border:0;background:transparent;color:#315d8b;flex:1;max-width:150px;font:700 11px Arial,sans-serif;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;padding:3px}
 .bottomNav button span{font-size:23px;line-height:25px}.bottomNav button.active{color:#9b752c}.app{padding-bottom:105px}.menuBtn{top:calc(12px + env(safe-area-inset-top))}
 </style><link rel="apple-touch-icon" href="icon-512.png">
-</head><body><div class="app"><header class="hero"><div class="emblem">✝︎</div><h1>My 54-Day Rosary Novena</h1><p>A daily journey of petition, thanksgiving and trust</p><div style="margin-top:7px;font:700 11px Arial,sans-serif;letter-spacing:.12em;opacity:.82">VERSION 5.5</div></header><div class="status"><div class="statusrow"><div class="day"><b id="dayLabel">Day 1 of 54</b><span class="phase" id="phase">Petition</span></div><button class="miniBtn" id="calendarToggle">54 Days</button></div><div class="track"><div id="dayProgress"></div></div></div><main>
+</head><body><div class="app"><header class="hero"><div class="emblem">✝︎</div><h1>My 54-Day Rosary Novena</h1><p>A daily journey of petition, thanksgiving and trust</p><div style="margin-top:7px;font:700 11px Arial,sans-serif;letter-spacing:.12em;opacity:.82">VERSION 6.0 — CLEAN BUILD</div><div style="margin-top:8px;font:700 12px Arial,sans-serif;background:#fff;color:#17466f;display:inline-block;padding:6px 10px;border-radius:999px">NEW NAVIGATION + 3 LANGUAGES</div></header><div class="status"><div class="statusrow"><div class="day"><b id="dayLabel">Day 1 of 54</b><span class="phase" id="phase">Petition</span></div><button class="miniBtn" id="calendarToggle">54 Days</button></div><div class="track"><div id="dayProgress"></div></div></div><main>
 <div id="home"><section class="welcome"><div class="eyebrow" id="todayMysteryLabel">Today's Rosary</div><h2 id="todayMystery">Joyful Mysteries</h2><p class="lead" id="dateLabel"></p><p class="lead">All six of your intentions remain part of every day. Press Begin and the app will guide you one prayer at a time.</p></section><section id="setupCard" class="calendarCard hidden"><div class="eyebrow">Begin your novena</div><h3>Choose your starting date</h3><p class="small">You only do this once. The app will calculate all 54 dates, the Petition/Thanksgiving phase, and the correct weekday Rosary mysteries automatically.</p><input id="startDate" type="date" style="width:100%;font-size:17px;padding:13px;border:1px solid var(--line);border-radius:12px;margin:8px 0 12px"><button class="primary" id="saveStart">Start My 54-Day Novena</button></section><section class="langbox">
 <div class="eyebrow">Prayer language</div>
 <div class="langchoices">
@@ -50,7 +50,7 @@
 <button class="menuItem" id="mLanguage">Prayer Language</button>
 <button class="menuItem" id="mChange">Change Start Date</button>
 <button class="menuItem danger" id="mRestart">Start a New Novena</button>
-<button class="menuItem" id="mAbout">About · Version 5.5</button>
+<button class="menuItem" id="mAbout">About · Version 6.0</button>
 </div></nav></div><div id="restartModal" class="modalShade hidden"><div class="modalBox"><div class="eyebrow">Start again</div><h3>Begin a new 54-day novena?</h3><p>This clears your current Day 1–54 completion record and lets you choose a new starting date. Your six personal intentions and prayer-language preference stay unchanged.</p><div class="modalBtns"><button class="dangerBtn" id="confirmRestart">Yes, Start a New Novena</button><button class="secondaryBtn" id="cancelRestart">Cancel</button></div></div></div><script>
 const intentions=[
 ['Children & Grandchildren','Good, upright, loving, respectful and protected.'],
@@ -200,5 +200,8 @@ document.getElementById('navHome').onclick=()=>{showHome();setActiveNav('navHome
 document.getElementById('navPray').onclick=()=>{startPrayer();setActiveNav('navPray')};
 document.getElementById('navDays').onclick=()=>{showCalendar();setActiveNav('navDays')};
 document.getElementById('navSettings').onclick=()=>{showSettings();setActiveNav('navSettings')};
-renderHome();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js');
+renderHome();
+// V6 clean build: remove older service workers/caches that could keep serving V5.0.
+if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister()));}
+if('caches' in window){caches.keys().then(keys=>keys.forEach(k=>caches.delete(k)));}
 </script></body></html>

@@ -1,7 +1,7 @@
 {
   "name": "My 54-Day Rosary Novena",
   "short_name": "54 Day Rosary",
-  "start_url": "./index.html",
+  "start_url": "./?v=6.0-clean",
   "display": "standalone",
   "background_color": "#fffdf7",
   "theme_color": "#315d8b",
