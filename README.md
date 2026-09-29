@@ -1,3 +1,3 @@
-# My 54-Day Rosary Novena — Version 7.1 MYSTERIES FIXED
+# My 54-Day Rosary Novena — Version 7.3 NAV + PROGRESS FIXED
 
-20 mystery images embedded directly in the app; 20 substantive Catholic meditations; complete rotating personal intention appears on the same mystery screen before the decade prayers.
+Four-column Home/Pray/Progress/Settings bottom navigation. Old 54-circle progress UI removed from HTML, CSS and JavaScript. Progress uses one bar, completion percentage, remaining days, Petition/Thanksgiving totals, and a short status list. Global top progress is based on completed days.
