@@ -1,3 +1,9 @@
-# My 54-Day Rosary Novena — Version 7.3 NAV + PROGRESS FIXED
+# My 54-Day Rosary Novena — Version 7.4
 
-Four-column Home/Pray/Progress/Settings bottom navigation. Old 54-circle progress UI removed from HTML, CSS and JavaScript. Progress uses one bar, completion percentage, remaining days, Petition/Thanksgiving totals, and a short status list. Global top progress is based on completed days.
+AUDITED fixes:
+- Replaced the incorrect Scourging at the Pillar artwork.
+- Added a persistent Home button on every screen.
+- Bottom Home / Pray / Progress / Settings buttons have direct click handlers.
+- Pray always opens today's Rosary from the beginning.
+- Home always returns to the main page, where Restart Novena remains available.
+- Added cache/service-worker cleanup so old V7.1/V7.3 app shells are not reused.
