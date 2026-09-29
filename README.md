@@ -1,9 +1,14 @@
-# My 54-Day Rosary Novena — Version 7.4
+# My 54-Day Rosary Novena & Personal Catholic Prayer Book — Version 8.0
 
-AUDITED fixes:
-- Replaced the incorrect Scourging at the Pillar artwork.
-- Added a persistent Home button on every screen.
-- Bottom Home / Pray / Progress / Settings buttons have direct click handlers.
-- Pray always opens today's Rosary from the beginning.
-- Home always returns to the main page, where Restart Novena remains available.
-- Added cache/service-worker cleanup so old V7.1/V7.3 app shells are not reused.
+Built from the working Version 7.4 base.
+
+## Version 8.0
+- Six corrected permanent default intentions.
+- Days 1–27 use Petition prayers; Days 28–54 use distinct Thanksgiving prayers.
+- Traditional Rosary prayers and sequence are preserved and visually separated from personal additions.
+- Personal dedication to Our Lady of the Most Holy Rosary before the Rosary and personal Marian closing after the traditional closing.
+- Optional Intention Library with daily selection that does not replace the six defaults.
+- Quick Prayer library independent of novena progress.
+- Full Prayer, 1-Minute and One-Line modes; Ask, Thank and Surrender modes.
+- Expanded Work, Career & Business prayers including Difficult Client, Doing an Excellent Job and Winning a Bid or Proposal.
+- Existing V7.4 navigation, progress, restart, language support and 20 embedded mystery artworks retained.
