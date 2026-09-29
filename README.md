@@ -1,0 +1,1 @@
+Version 5.5: fixed start-date and restart controls; persistent bottom navigation on all screens; corrected mystery screen crash; versioned offline cache. Keep six intentions in English.
