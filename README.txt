@@ -1,18 +1,15 @@
-MY 54-DAY ROSARY NOVENA — PHONE APP
+MY 54-DAY ROSARY NOVENA — GUIDED PHONE APP
 
-FILES
-- index.html — complete app and prayers
-- manifest.webmanifest — makes it installable as a Home Screen web app
-- sw.js — allows the app to work after it has been cached
+WHAT CHANGED
+- Guided, one-step-at-a-time prayer experience.
+- All six personal intentions remain visible on the home screen every day.
+- The first five intentions are integrated with the five Rosary decades.
+- Love & Marriage is the dedicated sixth intention after the five decades, so it is never lost.
+- No A-/A+ buttons on the main screen.
+- One clear Begin Today's Rosary button.
+- Full Apostles' Creed, Our Father, Hail Mary, Glory Be, Fatima Prayer and Hail Holy Queen are included in the guided flow.
+- 54-day calendar remains available from the 54 Days button.
+- Progress is stored locally on the device/browser.
 
-HOW TO USE ON IPHONE
-1. Put these three files on any HTTPS static web host (for example GitH ub Pages).
-2. Open the resulting website in Safari on your iPhone.
-3. Tap Share.
-4. Tap Add to Home Screen.
-5. Open “54 Days” from your Home Screen.
-
-The app remembers your current day, completed days, and text-size preference in that browser/device. No account or backend is used.
-
-IMPORTANT
-If Safari website data is cleared, local progress can be lost. A later version can add cloud sync if desired.
+IPHONE HOME SCREEN
+Host these files on HTTPS (for example GitHub Pages), open the site in Safari, tap Share, then Add to Home Screen.
