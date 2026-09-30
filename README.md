@@ -1,14 +1,8 @@
-# My 54-Day Rosary Novena — Version 8.1.2
+# My 54-Day Rosary Novena — V8.1.4
 
-Built directly from V8.1.1. No navigation or iPhone-layout redesign.
+Focused correction release based on V8.1.3.
 
-- Added a dedicated Assumption illustration.
-- Corrected three exact-name mismatches discovered in the full mystery audit:
-  Baptism of Jesus in the Jordan, Proclamation of the Kingdom of God, and Assumption.
-- Audited all 20 mystery illustrations and all 20 reflections against the actual prayer-flow titles.
-- Condensed the six default Petition intentions while preserving their essential content and Catholic structure.
-- Thanksgiving versions, prayer-library click fix, and start-date fix retained.
-
-
-## Version 8.1.3
-Deepened Default Intentions #1 and #6, including a living relationship with God for children/grandchildren, protection and healing for the granddaughters, welcome for the new baby boy, restoration of the father-daughter bond affected by addiction, and corresponding Thanksgiving prayers. Layout, navigation, mystery art, reflections, start-date behavior, and traditional Rosary prayers are unchanged.
+- Replaces the generic Optional Prayer Library fallback with title-specific substantive prayer content for every optional intention.
+- Keeps Ask / Thank / Surrender and Full / 1-Minute / One-Line modes.
+- Fixes prayer-library scrolling on iPhone/PWA by moving only that modal above fixed navigation and allowing full-page modal scrolling.
+- Preserves V8.1.3 layout, six default intentions, Rosary prayers, 20 mystery illustrations and reflections, progress, and start-date behavior.
