@@ -1,3 +1,3 @@
-# My 54-Day Rosary Novena — Version 8.1.5
+# Version 8.1.6 — GO TO DAY
 
-Removed the generic optional-prayer template. Full Ask prayers now use the subject-specific prayer body itself, without the repeated generic middle paragraph or universal Marian ending. Quick and One-Line modes are condensed from the selected prayer's own text. V8.1.4 scrolling fix retained.
+Choose any Day 1–54 from Progress without restarting. Optionally mark earlier days completed. V8.1.5 prayer library retained.
