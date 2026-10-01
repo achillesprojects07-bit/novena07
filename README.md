@@ -1,8 +1,3 @@
-# My 54-Day Rosary Novena — V8.1.4
+# My 54-Day Rosary Novena — Version 8.1.5
 
-Focused correction release based on V8.1.3.
-
-- Replaces the generic Optional Prayer Library fallback with title-specific substantive prayer content for every optional intention.
-- Keeps Ask / Thank / Surrender and Full / 1-Minute / One-Line modes.
-- Fixes prayer-library scrolling on iPhone/PWA by moving only that modal above fixed navigation and allowing full-page modal scrolling.
-- Preserves V8.1.3 layout, six default intentions, Rosary prayers, 20 mystery illustrations and reflections, progress, and start-date behavior.
+Removed the generic optional-prayer template. Full Ask prayers now use the subject-specific prayer body itself, without the repeated generic middle paragraph or universal Marian ending. Quick and One-Line modes are condensed from the selected prayer's own text. V8.1.4 scrolling fix retained.
